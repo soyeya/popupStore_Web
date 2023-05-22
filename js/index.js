@@ -1,23 +1,4 @@
 
-const popup_header = document.querySelector("header");
-
-window.addEventListener("scroll" , () => {
-
- var $scrollY = window.scrollY;
-
- if($scrollY  > 0){
-
-    popup_header.classList.add("active");
-
- }else{
-
-    popup_header.classList.remove("active");
- }
- 
-})
-
-
-
 let slider_wrap = document.querySelector(".slider_wrap");
 const slider_prevBtn = document.querySelector(".prevBtn");
 const slider_nextBtn = document.querySelector(".nextBtn");

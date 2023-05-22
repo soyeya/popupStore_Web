@@ -101,14 +101,14 @@ header ul img{
 .popUp_slider .slider_wrap.active{
 
     margin-left:-100%;
-    transition:1.5s;
+    transition:1s;
     
 }
 
 .popUp_slider .slider_wrap.move{
 
     margin-left: 100%;
-    transition:1.5s;
+    transition:1s;
     
 }
 

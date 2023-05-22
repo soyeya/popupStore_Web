@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/sub.css">
     <title>sub_pages</title>
 </head>
 <body>
@@ -11,14 +13,42 @@
 <header>
     <ul class="logo"><a href="./index.html"><img src="./img/pop_logo2.png"></a></ul>
     <ul class="store_list">
-      <li rel="jomalone"><a href="./sub.html#jomalone"><img src="./img/jomalone_logo.png" alt=""></a></li>
-      <li rel="sw19"><a href="./sub.html#sw19"><img src="./img/sw19_logo.png" alt=""></a></li>
-      <li rel="tamburine"><a href="./sub.html#tamburins"><img src="./img/tamburins_logo.png" alt=""></a></li>
+      <li rel="jomalone"><a href="#jomalone"><img src="./img/jomalone_logo.png" alt=""></a></li>
+      <li rel="sw19"><a href="#sw19"><img src="./img/sw19_logo.png" alt=""></a></li>
+      <li rel="tamburins"><a href="#tamburins"><img src="./img/tamburins_logo.png" alt=""></a></li>
     </ul>
 </header>
-
+<section class="sub_main"></section>
+    <section class="sub_title">
+        <span></span>
+    </section>
+<section class="sub_prd">
+    <ul class="sub_prdWrap">
+    </ul>
+</section>
 <footer>
    <span> &copy;팝업스토어 전문페이지</span>
 </footer>
+<script>
+
+    const popup_header = document.querySelector("header");
+    
+    window.addEventListener("scroll" , () => {
+    
+     var $scrollY = window.scrollY;
+    
+     if($scrollY  > 0){
+    
+        popup_header.classList.add("active");
+    
+     }else{
+    
+        popup_header.classList.remove("active");
+     }
+     
+    });
+    
+    </script>
+<script src="./js/sub.js"></script>
 </body>
 </html>

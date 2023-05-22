@@ -31,7 +31,26 @@
 <footer>
    <span> &copy;팝업스토어 전문페이지</span>
 </footer>
+<script>
 
+const popup_header = document.querySelector("header");
+
+window.addEventListener("scroll" , () => {
+
+ var $scrollY = window.scrollY;
+
+ if($scrollY  > 0){
+
+    popup_header.classList.add("active");
+
+ }else{
+
+    popup_header.classList.remove("active");
+ }
+ 
+});
+
+</script>
 <script src="./js/index.js"></script>
 </body>
 </html>
